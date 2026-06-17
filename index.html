@@ -4,74 +4,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Archa Satheish | AI Engineer Portfolio</title>
+<title>Archa Satheish | AI & Machine Learning Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f5f7fa;
-    color:#333;
+background:#0f172a;
+color:white;
 }
 
 header{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+padding:20px;
 }
 
 header h1{
-    font-size:3rem;
+font-size:4rem;
+margin-bottom:10px;
 }
 
 header p{
-    margin-top:10px;
-    font-size:1.2rem;
+font-size:1.3rem;
+max-width:700px;
+}
+
+.btns{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+background:white;
+color:#111827;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 section{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
-h2{
-    margin-bottom:20px;
-    color:#0f172a;
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#60a5fa;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+border:1px solid rgba(255,255,255,0.1);
 }
 
 .skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
 }
 
 .skill{
-    background:#2563eb;
-    color:white;
-    padding:10px 15px;
-    border-radius:20px;
+background:#2563eb;
+padding:10px 20px;
+border-radius:30px;
+font-weight:500;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project h3{
+color:#60a5fa;
+margin-bottom:15px;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:20px;
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2.5rem;
+}
 }
 </style>
 
@@ -80,91 +144,129 @@ footer{
 <body>
 
 <header>
-    <h1>Archa Satheish</h1>
-    <p>AI Engineering Student | Data Analyst | Machine Learning Enthusiast</p>
+<h1>Archa Satheish</h1>
+
+<p>
+AI & Machine Learning Engineer | Artificial Intelligence & Data Science Graduate
+Passionate about Machine Learning, NLP, Computer Vision, FastAPI and AI-powered applications.
+</p>
+
+<div class="btns">
+<a href="#" class="btn">Download Resume</a>
+<a href="https://github.com/archa352" class="btn">GitHub</a>
+<a href="https://linkedin.com" class="btn">LinkedIn</a>
+</div>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-        I am a B.Tech Artificial Intelligence student passionate about
-        Data Science, Machine Learning, Computer Vision, and AI-powered
-        solutions. I enjoy solving real-world problems using technology
-        and continuously learning new tools and techniques.
-        </p>
-    </div>
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+Artificial Intelligence and Data Science graduate with expertise in Machine Learning, Deep Learning, NLP, Computer Vision and FastAPI backend development. Experienced in building AI-powered applications using Python, TensorFlow, OpenCV and React Native.
+</div>
 </section>
 
 <section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Deep Learning</div>
-        <div class="skill">Data Analysis</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Pandas</div>
-        <div class="skill">NumPy</div>
-        <div class="skill">OpenCV</div>
-        <div class="skill">GitHub</div>
-    </div>
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">JavaScript</div>
+<div class="skill">SQL</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Deep Learning</div>
+<div class="skill">NLP</div>
+<div class="skill">Computer Vision</div>
+<div class="skill">TensorFlow</div>
+<div class="skill">FastAPI</div>
+<div class="skill">OpenCV</div>
+<div class="skill">MediaPipe</div>
+<div class="skill">React Native</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+</div>
 </section>
 
 <section>
-    <h2>Projects</h2>
+<h2 class="section-title">Experience</h2>
 
-```
 <div class="card">
-    <h3>Foot Length Measurement Using ML, DL and AR</h3>
-    <br>
-    <p>
-    Developed a smart system that measures foot length using a smartphone
-    camera and recommends suitable footwear sizes. The project combines
-    image processing, machine learning, and augmented reality to improve
-    accuracy and user experience.
-    </p>
+<h3>AI & Backend Development Intern</h3>
+<br>
+<p><strong>Capsdata Technologies Pvt. Ltd.</strong></p>
+<br>
+<ul>
+<li>Developed taxonomy generation pipelines using Python and FastAPI.</li>
+<li>Worked on backend workflows and scalable architectures.</li>
+<li>Improved structured data processing efficiency.</li>
+<li>Gained experience in AI-based backend systems.</li>
+</ul>
 </div>
-```
-
 </section>
 
 <section>
-    <h2>Education</h2>
+<h2 class="section-title">Featured Projects</h2>
 
-```
-<div class="card">
-    <h3>B.Tech in Artificial Intelligence</h3>
-    <p>Currently Pursuing</p>
+<div class="grid">
+
+<div class="project">
+<h3>Thought Mirror</h3>
+<p>
+AI-powered journaling platform for emotional analysis and productivity tracking using T5, MiniLM, FastAPI and React Native.
+</p>
 </div>
 
-<div class="card">
-    <h3>Higher Secondary (ISC)</h3>
+<div class="project">
+<h3>Foot Length Measuring System</h3>
+<p>
+Real-time foot measurement system using OpenCV and MediaPipe with computer vision based calibration and size recommendation.
+</p>
 </div>
 
-<div class="card">
-    <h3>Secondary Education (ICSE)</h3>
+<div class="project">
+<h3>Vehicle Detection & Tracking</h3>
+<p>
+Real-time surveillance solution using object detection and motion tracking techniques with Python and OpenCV.
+</p>
 </div>
-```
 
+<div class="project">
+<h3>Smart Healthcare Connect</h3>
+<p>
+AI-powered healthcare assistant with chatbot integration, pill reminders and medical report analysis.
+</p>
+</div>
+
+</div>
 </section>
 
 <section>
-    <h2>Contact</h2>
+<h2 class="section-title">Education</h2>
 
-```
 <div class="card">
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
+<h3>B.Tech Artificial Intelligence & Data Science</h3>
+<p>SJCET Palai</p>
+<p><strong>CGPA: 8.5 / 10</strong></p>
 </div>
-```
 
+<div class="card">
+<h3>Higher Secondary Education</h3>
+<p>92.5%</p>
+</div>
+</section>
+
+<section class="contact">
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+<p>📧 satheisharcha3@gmail.com</p>
+<p>📱 +91 8590671965</p>
+<p>📍 Pala, Kerala, India</p>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Archa Satheish</p>
+<p>© 2026 Archa Satheish | AI & Machine Learning Engineer</p>
 </footer>
 
 </body>
